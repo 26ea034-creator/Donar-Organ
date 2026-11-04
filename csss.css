@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
+    color: #333;
+}
+
+/* Header */
+
+header {
+    background-color: #087f8c;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe082;
+}
+
+/* Hero section */
+
+.hero {
+    background: linear-gradient(120deg, #087f8c, #36b5a5);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: white;
+    color: #087f8c;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Common sections */
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #087f8c;
+    margin-bottom: 20px;
+}
+
+/* About */
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* Registration */
+
+.register form {
+    background-color: white;
+    max-width: 450px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #087f8c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #065d68;
+}
+
+#message {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Search */
+
+.search input {
+    max-width: 300px;
+}
+
+#results {
+    margin: 20px auto;
+    max-width: 500px;
+    line-height: 2;
+}
+
+/* Contact */
+
+.contact {
+    background-color: #e0f2f1;
+}
+
+/* Footer */
+
+footer {
+    background-color: #075b64;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    line-height: 2;
+}
+
+/* Mobile responsive design */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}

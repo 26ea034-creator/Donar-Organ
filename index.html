@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeLink - Organ Donor and Finder</title>
+    <link rel="stylesheet" href="csss.css">
+</head>
+<body>
+
+    <header>
+        <h1>LifeLink</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#register">Register</a>
+            <a href="#search">Find Donors</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Give the Gift of Life</h2>
+        <p>One decision can make a difference in someone's life.</p>
+        <a href="#register" class="btn">Become a Donor</a>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About LifeLink</h2>
+        <p>
+            LifeLink is an organ donor and finder website designed
+            to spread awareness about organ donation and connect
+            people through a simple registration system.
+        </p>
+    </section>
+
+    <section class="register" id="register">
+        <h2>Donor Registration</h2>
+
+        <form id="donorForm">
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <input type="number" id="age" placeholder="Enter your age" required>
+
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+            <select id="organ" required>
+                <option value="">Select organ</option>
+                <option value="Kidney">Kidney</option>
+                <option value="Liver">Liver</option>
+                <option value="Heart">Heart</option>
+                <option value="Lungs">Lungs</option>
+                <option value="Eyes">Eyes</option>
+            </select>
+
+            <input type="text" id="city" placeholder="Enter your city" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <section class="search" id="search">
+        <h2>Find Donors</h2>
+
+        <input type="text" id="searchOrgan"
+               placeholder="Enter organ name">
+
+        <button onclick="searchDonor()">Search</button>
+
+        <div id="results"></div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: lifelink@example.com</p>
+        <p>Website: LifeLink Organ Donation System</p>
+    </section>
+
+    <footer>
+        <p>© 2026 LifeLink | Organ Donor and Finder System</p>
+        <p>Spreading awareness, saving lives.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
